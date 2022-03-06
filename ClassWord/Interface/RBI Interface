@@ -1,0 +1,14 @@
+package week3.day2;
+
+public interface RBI {
+	int a = 1;
+
+	/**
+	 * Interface has open account and provide debit card methods
+	 * 
+	 */
+	public void openAccount();
+
+	public void provideDebitCard();
+
+}
