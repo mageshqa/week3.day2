@@ -1,0 +1,38 @@
+package week3.day2;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+import java.util.List;
+
+public class FindSecondLargest {
+
+	public static void main(String[] args) {
+
+		int[] arrayList = { 45, 78, 98, 31, 101, 01 };
+		// int[] arraySet = {999,185,841,12,9,18};
+
+		List<Integer> list = new ArrayList<Integer>();
+
+		for (Integer i : arrayList) {
+			list.add(i);
+
+		}
+
+		System.out.println(list);
+		Collections.sort(list);
+		System.out.println(list);
+
+		System.out.println("Second largetst using List - " + list.get(list.size() - 2));
+
+		/*
+		 * Set<Integer> set = new Set<Integer>();
+		 * 
+		 * for (Integer j : arraySet) { set.add(j); }
+		 * 
+		 * System.out.println("Second largest using Set - "+set.);
+		 */
+
+	}
+
+}
