@@ -1,0 +1,39 @@
+package week3.day2;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class FindIntersectionList {
+
+	public static void main(String[] args) {
+
+		int[] array1 = { 3, 2, 6, 8, 11, 18 };
+		int[] array2 = { 5, 7, 8, 3, 19, 11, 20 };
+
+		List<Integer> temp = new ArrayList<Integer>();
+		List<Integer> arrayList1 = new ArrayList<Integer>();
+
+		for (Integer i : array1) {
+			arrayList1.add(i);
+		}
+
+		List<Integer> arrayList2 = new ArrayList<Integer>();
+
+		for (Integer j : array2) {
+			arrayList2.add(j);
+		}
+
+		for (Integer a : arrayList1) {
+
+			for (Integer b : arrayList2) {
+				if (a == b) {
+					temp.add(a);
+				}
+			}
+		}
+
+		System.out.println("Common integers are " + temp);
+
+	}
+
+}
